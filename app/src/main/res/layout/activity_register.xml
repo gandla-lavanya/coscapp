@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registration Form"
+        android:fontFamily="serif"
+        android:textColor="#050404"
+        android:textSize="30dp"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/et_rollnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="Username"
+        android:textColor="#050404"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:hint="Enter Username"
+        android:ems="10"
+        android:background="@android:color/white"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="#050404"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/et_entername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:background="@android:color/white"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"/>
+
+    <TextView
+        android:id="@+id/et_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="#050404"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/et_entereventname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@android:color/white"
+        android:layout_below="@+id/et_entername"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Eventname"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contact"
+        android:textColor="#050404"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/et_entereventname"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@android:color/white"
+        android:hint="Mobile Number"
+        android:layout_below="@+id/et_entereventname"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:layout_below="@+id/phone"
+        android:textColor="#050404"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/et_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@android:color/white"
+        android:hint="Enter Branch"
+        android:layout_below="@+id/et_phone"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:layout_below="@+id/branch"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="#050404"
+        android:textSize="20dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_1"
+        android:text="one"
+        android:orientation="horizontal"
+        android:layout_below="@+id/year"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:onClick="checkButton"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_2"
+        android:text="Two"
+        android:orientation="horizontal"
+        android:layout_below="@+id/radio_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:onClick="checkButton"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_3"
+        android:text="Three"
+        android:orientation="horizontal"
+        android:layout_below="@+id/radio_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:onClick="checkButton"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_4"
+        android:text="Four"
+        android:orientation="horizontal"
+        android:layout_below="@+id/radio_3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:onClick="checkButton"/>
+
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="section"
+        android:layout_below="@+id/radio_4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="#050404"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/et_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/radio_4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:hint="Enter Section"
+        android:background="@android:color/white"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/et_section"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="30dp"
+        android:text="SUBMIT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"/>
+
+
+</RelativeLayout>
+
+
